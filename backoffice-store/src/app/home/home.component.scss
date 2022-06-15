@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+section#home {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  }
+
+  p {
+    font-family: "Raleway", sans-serif;
+  }
+
+  article#welcome {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    main {
+      #illustration {
+        width: 60vh;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  article#technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    main {
+      .col-lg-3:not(:last-child) {
+        border-right: 1px solid #e5e5e5;
+      }
+      @media (max-width: 390px) {
+        .col-lg-3:not(:last-child) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
